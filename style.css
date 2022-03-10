@@ -1,0 +1,97 @@
+html, body{
+    margin: 0px;
+    height: 100vh;
+}
+
+body{
+    background-color: #505261;
+    
+}
+h1{
+    text-align: center;
+}
+
+.content{
+    /* margin: 10rem; */
+    width: 70%;
+    height: 80%;
+    background-image: linear-gradient(to right, #272A37,#272A37 50%, #272a3788 100%), url("https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    border-radius: 2.5em;
+}
+
+.form_elements{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: azure;
+    margin-top: 1em;
+    font-size: 0.8rem;
+}
+.heading{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+p{
+    margin: 0px;
+}
+button {
+    border: none;
+    color: #090909;
+    padding: 0.6em 0.6em;
+    font-size: 0.8rem;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 3px 3px 6px #c5c5c5;
+    font-family: 'Poppins', sans-serif;
+}
+   
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5;
+}
+input{
+    border-radius: 0.8rem;
+}
+select{
+    border-radius: 0.8rem;  
+}
+
+@media only screen and (max-width : 768px) {
+    .content{
+        width: 80%;
+        height: 80%;
+    }
+    .form_elements{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 0.5em;
+    }
+    .heading{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width : 450px) {
+    .content{
+        width: 90%;
+        height: 90%;
+    }
+    .form_elements{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
